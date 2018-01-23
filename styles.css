@@ -1,0 +1,198 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
+.container {
+	max-width: 800px;
+	margin: auto;
+}
+
+header {
+	margin-top: 60px;
+}
+
+h1 {
+	text-align: center;
+	color: brown;
+	font-size: 3.5rem;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.range-sliders h2 {
+	border: 3px solid;
+	border-radius: 20px;
+	width: 100px;
+	padding: 6px;
+	text-align: center;
+	font-size: 1rem;
+	background-color: none;
+}
+
+.button-group {
+	display: flex;
+}
+
+button {
+	padding: 10px;
+	display: block;
+	margin: 60px auto 0 auto;
+	outline: none;
+	border-radius: 5px;
+	border:2px solid;
+	transition: all .10s;
+	font-size: 1.3rem;
+}
+
+#play {
+	color: green;
+	background-color: white;
+}
+
+#play:hover {
+	color: white;
+	background-color: green;
+}
+
+#stop {
+	color: red;
+	background-color: white;
+}
+
+#stop:hover {
+	color: white;
+	background-color: red;
+}
+
+.range-sliders {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+/*	transform: rotate(270deg);
+*/	width: 320px;
+
+}
+
+.range-sliders input {
+	background-image: url('https://i.stack.imgur.com/jGlzr.png');
+	background-position: left-bottom;
+	background-size: cover;
+	border: 5px solid;
+}
+
+#master-out, #master-filter {
+	border: 5px solid;
+	border-radius: 10px;
+	background-image: url('http://sciencerocks.info/wp-content/uploads/2016/09/popular-dark-wood-floor-pattern-vertical-wooden-floor-texture-0.jpg');
+	background-size: cover;
+    box-shadow: 8px 11px 0px #0000002e;
+}
+
+input[type=range] {
+	padding: 40px;
+}
+
+/* RANGE SLIDER STYLING */
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 7.3px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 17.4px;
+  cursor: pointer;
+  box-shadow: 2.6px 2.6px 1px #000000, 0px 0px 2.6px #0d0d0d;
+  background: #42a4a9;
+  border-radius: 0px;
+  border: 5.3px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 4.7px 4.7px 7px #000089, 0px 0px 4.7px #0000a3;
+  border: 1px solid #000000;
+  height: 32px;
+  width: 16px;
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12.6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #45abb0;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 17.4px;
+  cursor: pointer;
+  box-shadow: 2.6px 2.6px 1px #000000, 0px 0px 2.6px #0d0d0d;
+  background: #42a4a9;
+  border-radius: 0px;
+  border: 5.3px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 4.7px 4.7px 7px #000089, 0px 0px 4.7px #0000a3;
+  border: 1px solid #000000;
+  height: 32px;
+  width: 16px;
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 17.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #3f9da2;
+  border: 5.3px solid #010101;
+  border-radius: 0px;
+  box-shadow: 2.6px 2.6px 1px #000000, 0px 0px 2.6px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #42a4a9;
+  border: 5.3px solid #010101;
+  border-radius: 0px;
+  box-shadow: 2.6px 2.6px 1px #000000, 0px 0px 2.6px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 4.7px 4.7px 7px #000089, 0px 0px 4.7px #0000a3;
+  border: 1px solid #000000;
+  height: 32px;
+  width: 16px;
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 17.4px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #42a4a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #45abb0;
+}
+
